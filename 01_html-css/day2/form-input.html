@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style media="screen">
+		label{
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>회원가입</h1>
+	<fieldset>
+		<legend>기본정보</legend>
+		<div>
+			<label for="id">ID</label>
+			<input type="text" placeholder="ID 입력하세요">
+		</div>
+		<div>
+			<label for="pw">비밀번호</label>
+			<input type="password" placeholder="비밀번호 입력">
+		</div>
+		<div>
+			<label for="email">이메일</label>
+			<input type="email">
+		</div>
+		<div>
+			<label for="gender">성별</label>
+			<select name="gender">
+				<option value="F">여</option>
+				<option value="M">남</option>
+			</select>
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>선택입력</legend>
+		<div><label>나이<input type="text"></label></div>
+		<div><label>주소<input type="text"></label></div>
+		<div><label>자기소개<textarea type="text" placeholder="자기소개" rows="10"></textarea></label></div>
+	</fieldset>
+
+	<hr>
+	<h3>form practice</h3>
+	<form action="">
+		<input name="1" type="text" value="disabled" disabled=""><br>
+		<input name="2" type="text" value="readonly" readonly><br>
+		<input name="3" type="password" id="password"><br>
+		<input name="4" type="text" required><br>
+		<input name="5" type="text" placeholder="공백은 안돼!"><br>
+		<input name="6" type="text" size="3"><br>
+		<input name="7" type="text" maxlength="10"><br>
+		<input name="8" type="checkbox"><br>
+		<input type="radio" name="agree" id="radio1" name="agree" checked="checked"><br>
+		<input type="radio" name="agree" id="radio2"><br>
+		<input name="secret" type="hidden" value="비밀">
+		<input type="submit">
+	</form>
+
+	<form action="">
+		<h2>form2</h2>
+		<input type="radio" name="radio-name" value="a">
+		<input type="radio" name="radio-name" value="b">
+	</form>
+
+	<h2>form3</h2>
+	<form action=""></form>
+	<div><label>ID <input type="text"></label></div>
+	<div>
+		<label>Username</label>
+		<input type="text" id="username">
+	</div>
+
+	<h3>select</h3>
+	<select name="number" id="">
+		<option value="1">hello1</option>
+		<option value="2">hello2</option>
+		<option value="3">hello3</option>
+		<option value="4">hello4</option>
+	</select>
+
+	<h3>option group</h3>
+	<select name="" id="">
+		<optgroup label="Fruits">
+			<option value="apple">Apple</option>
+			<option value="banana">Banana</option>
+			<option value="orange">haha</option>
+		</optgroup>
+		<optgroup label="">
+			<option value="">123</option>
+			<option value="">123</option>
+			<option value="">123</option>
+		</optgroup>
+	</select>
+
+	<input type="button" value="버튼">
+
+	<fieldset>
+		<legend>legend</legend>
+		<label>user name : <input type="text"></label>
+		<label>password : <input type="password"></label>
+	</fieldset>
+</body>
+</html>

@@ -1,0 +1,220 @@
+nav.top-nav {
+  background-color: white;
+  height: 60px;
+  padding: 0 32px;
+}
+
+nav.top-nav ul {
+  height: 60px;
+}
+
+nav.top-nav ul.top-nav-left-list {
+  float: left;
+}
+
+nav.top-nav ul.top-nav-right-list {
+  float: right;
+}
+
+nav.top-nav ul li {
+  height: 60px;
+  line-height: 60px;
+  float: left;
+}
+
+nav.top-nav ul li.menu-logo img, nav.top-nav ul li.menu-search img {
+  vertical-align: middle;
+}
+
+nav.top-nav ul li.menu-logo {
+  margin: 0 20px 0 0;
+}
+
+nav.top-nav ul li.menu-search {
+  margin: 0 10px 0 0;
+}
+
+nav.top-nav ul li.menu-search input {
+  width: 0;
+  height: 35px;
+  padding: 0;
+  margin-left: 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  transition: 600ms;
+}
+
+nav.top-nav ul li.menu-search:hover input {
+  width: 200px;
+  padding: 5px 15px;
+  background-color: #f0efef;
+}
+
+nav.top-nav ul li.menu-item a {
+  display: inline-block;
+  height: 60px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  transition: 120ms;
+}
+
+nav.top-nav ul li.menu-item a img {
+  vertical-align: middle;
+}
+
+nav.top-nav ul li.menu-item a:hover {
+  color: #fa6b69;
+  border-bottom: 1px solid #fa6b69;
+}
+
+nav.top-nav ul li.menu-btn {
+  margin: 0 0 0 10px;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 39px;
+  padding-bottom: 78px;
+}
+
+.container section.container-section {
+  float: left;
+  width: 720px;
+  background-color: #ebeae5;
+}
+
+.container section.container-section h1 {
+  margin-left: 10px;
+}
+
+.container aside.container-aside {
+  float: left;
+  margin-top: 26px;
+  margin-left: 20px;
+  width: 220px;
+}
+
+.container aside.container-aside ul.category-list {
+  border-top: 1px solid #ddd;
+  margin-top: 6px;
+  padding-top: 6px;
+}
+
+.container aside.container-aside ul.category-list li {
+  font-size: 15px;
+  transition: all 0.18s ease-out;
+  color: #878787;
+  cursor: pointer;
+  display: block;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 4.33333px 13px;
+}
+
+.container aside.container-aside ul.category-list li:hover {
+  border-left: 1px solid #fa6b69;
+}
+
+.container aside.container-aside ul.category-list li:hover a {
+  color: #fa6b69;
+}
+
+section.container-section ul.project-list li.project-card {
+  margin: 0 10px 26px;
+  float: left;
+  width: 220px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+section.container-section ul.project-list li.project-card p {
+  margin: 0;
+  line-height: 20px;
+}
+
+section.container-section ul.project-list li.project-card img.card-image {
+  max-width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+section.container-section ul.project-list li.project-card img.card-image:hover {
+  opacity: 0.5;
+}
+
+section.container-section ul.project-list li.project-card .card-top {
+  height: 139px;
+  padding: 13px 19px 0;
+}
+
+section.container-section ul.project-list li.project-card .card-top .card-title {
+  font-size: .875em;
+  line-height: 1.375;
+  color: #645353;
+  font-weight: 500;
+}
+
+section.container-section ul.project-list li.project-card .card-top .card-owner {
+  color: #433;
+  font-size: .785em;
+  line-height: 1.6;
+  margin: 3px 0 0;
+}
+
+section.container-section ul.project-list li.project-card .card-top .card-description {
+  color: #645353;
+  font-size: .785em;
+  letter-spacing: .025em;
+  line-height: 1.685;
+  margin: 8px 0 0;
+}
+
+section.container-section ul.project-list li.project-card .card-bottom {
+  box-sizing: border-box;
+  border-top: 3px solid #fa6b69;
+  width: 220px;
+  padding: 10px 19px 6.5px;
+}
+
+section.container-section ul.project-list li.project-card .card-bottom .card-bottom-left {
+  width: 126px;
+  float: left;
+}
+
+section.container-section ul.project-list li.project-card .card-bottom .card-bottom-rigth {
+  width: 53px;
+  float: right;
+}
+
+section.container-section ul.project-list li.project-card .card-bottom .card-bottom-title {
+  color: #6d6d6d;
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+section.container-section ul.project-list li.project-card .card-bottom .card-bottom-content {
+  color: #433;
+  font-size: .725em;
+  font-weight: 500;
+}
+
+section.container-section ul.project-list li.project-card .card-bottom .card-bottom-content-percent {
+  display: inline;
+  color: #fa6b69;
+  font-size: .5em;
+  font-weight: 500;
+  margin-left: 3px;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 720px;
+  }
+  .container section.container-section {
+    width: 500px;
+  }
+}

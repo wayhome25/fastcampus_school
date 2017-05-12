@@ -1,0 +1,32 @@
+@import "variables";
+
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.btn {
+  box-sizing: border-box;
+  border: 2px solid $color-text-common;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 17px;
+}
+
+.btn-theme {
+  border-color: $color-theme;
+  color: $color-theme;
+
+  &:hover {
+	background-color: $color-theme;
+	color: #fff;
+  }
+}
+
+h1,h2,h3,h4 {
+	color : $color-text-h
+}

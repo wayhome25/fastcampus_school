@@ -1,0 +1,100 @@
+html {
+	font-style: 16px;
+}
+
+body {
+	font-size: 0.9rem;
+	padding: 20px;
+}
+
+a {
+	color: #0275d8;
+	text-decoration: none;
+}
+
+ul, ol {
+	-webkit-padding-start: 20px;
+}
+/* header */
+
+.modify-time {
+	text-align: right;
+}
+.reference {
+	margin-bottom: 20px;
+}
+.reference * {
+	vertical-align: middle;
+}
+
+.reference-txt {
+	padding-left: 5px;
+}
+
+.arrow {
+	width: 22px;
+}
+
+.profile-table {
+	border: 2px solid #b38b6e;
+	border-collapse: collapse;
+}
+
+.profile-table td {
+	border: 1px solid #dddddd;
+	text-align: center;
+	padding: 10px 0;
+
+}
+
+.profile-table td:nth-child(1) {
+	background-color: #b38b6e;
+	color: white;
+}
+
+.profile-table tr:nth-child(1) td {
+	background-color: white;
+}
+
+.profile-table td:nth-child(2) {
+	white-space: pre-line;
+}
+
+.profile-pic {
+	margin: 5px;
+	max-width: 100%;
+}
+
+
+/*content*/
+
+.detail > h2 {
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+}
+
+.index {
+	padding: 10px;
+	border: 1px solid gray;
+	width: 400px;
+	margin-top: 70px ;
+	margin-bottom: 70px;
+}
+
+
+
+.video-caption {
+	font-weight: bold;
+	text-align: center;
+	background-color: #e4e4e4;
+	height: 30px;
+	line-height: 30px;
+}
+
+.quote {
+	background-color: #e4e4e4;
+	padding: 20px;
+	padding-right: 50px;
+	border: 2px dashed gray;
+	border-left: 5px solid green;
+}
