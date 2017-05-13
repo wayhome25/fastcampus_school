@@ -1,0 +1,169 @@
+@import "variables";
+
+#header {
+	.top {
+		position: relative;
+		text-align: center;
+		background: #FFFFFF;
+		padding: 40px 0 34px;
+
+		.search{
+			position: absolute;
+			right: 50px;
+			top: 15px;
+			text-align: right;
+			* {
+				display: inline-block;
+				margin-left: 5px;
+			}
+			.search-input{
+				text-decoration: none;
+
+				img{
+					width: 30px;
+					opacity: 0.5;
+
+					&:hover {
+						opacity: 1;
+					}
+				}
+
+				input{
+					width: 0;
+					height: 35px;
+					padding: 0;
+					margin-left: 0;
+					box-sizing: border-box;
+					border: none;
+					border-radius: 5px;
+					transition: 600ms;
+				}
+
+				&:hover input{
+					width: 200px;
+					padding: 5px 15px;
+					background-color: #f0efef;
+				}
+			}
+			.github {
+				width: 30px;
+				opacity: 0.5;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+
+		.brnad {
+			* {
+				vertical-align: middle;
+				color: $color-text-h;
+			}
+			.logo {
+				width: 90px;
+				margin-right: 20px;
+			}
+			.site-title {
+				font-size: 50px;
+				font-weight: bold;
+			}
+			.sub-title {
+				font-size: 20px;
+				vertical-align: text-top;
+			}
+
+		}
+	}
+	.navbar-custom{
+		text-align: center;
+		background-color: #fff;
+		border-top: 1px solid #EFEFEF;
+
+		ul.navbar-nav{
+			display: inline-block;
+			text-align: center;
+			float: none;
+			margin: 0 auto;
+
+			li{
+				padding: 0 10px;
+				a{
+					font-weight: 600;
+					font-size: 14px;
+					color: $color-post-text;
+				}
+			}
+		}
+	}
+}
+
+
+
+#posts {
+
+	section.col-md-4 {
+		padding: 0;
+
+		.post {
+			background-color: $color-bg-post;
+			margin: 20px;
+			overflow: hidden;
+
+			.post-wrap{
+				padding: 20px 24px;
+			}
+			.post-title {
+				display: block;
+				color: #000;
+				font-size: 22px;
+				text-decoration: none;
+				font-weight: 300;
+			}
+			.post-date,
+			.post-nickname {
+				color: #727272;
+				font-size: 12px;
+				text-transform: uppercase;
+			}
+			.post-tag {
+				color: $color-post-tag;
+				display: inline-block;
+			}
+		}
+
+		.post-default {
+			.post-header {
+				height: 80px;
+
+				.author-pic {
+					float: left;
+					margin-right: 20px;
+					width: 60px;
+				}
+			}
+
+			.post-body {
+				height: 232px;
+				position: relative;
+				overflow: hidden;
+			}
+
+		}
+
+		.post-pic {
+			.media {
+				margin-bottom: 20px;
+				img {
+					width: 100%;
+				}
+			}
+
+			.post-header {
+				margin-bottom: 10px;
+			}
+
+		}
+	}
+
+}

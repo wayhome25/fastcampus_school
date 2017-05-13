@@ -1,0 +1,162 @@
+#header .top {
+  position: relative;
+  text-align: center;
+  background: #FFFFFF;
+  padding: 40px 0 34px;
+}
+
+#header .top .search {
+  position: absolute;
+  right: 50px;
+  top: 15px;
+  text-align: right;
+}
+
+#header .top .search * {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+#header .top .search .search-input {
+  text-decoration: none;
+}
+
+#header .top .search .search-input img {
+  width: 30px;
+  opacity: 0.5;
+}
+
+#header .top .search .search-input img:hover {
+  opacity: 1;
+}
+
+#header .top .search .search-input input {
+  width: 0;
+  height: 35px;
+  padding: 0;
+  margin-left: 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  transition: 600ms;
+}
+
+#header .top .search .search-input:hover input {
+  width: 200px;
+  padding: 5px 15px;
+  background-color: #f0efef;
+}
+
+#header .top .search .github {
+  width: 30px;
+  opacity: 0.5;
+}
+
+#header .top .search .github:hover {
+  opacity: 1;
+}
+
+#header .top .brnad * {
+  vertical-align: middle;
+  color: #645353;
+}
+
+#header .top .brnad .logo {
+  width: 90px;
+  margin-right: 20px;
+}
+
+#header .top .brnad .site-title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#header .top .brnad .sub-title {
+  font-size: 20px;
+  vertical-align: text-top;
+}
+
+#header .navbar-custom {
+  text-align: center;
+  background-color: #fff;
+  border-top: 1px solid #EFEFEF;
+}
+
+#header .navbar-custom ul.navbar-nav {
+  display: inline-block;
+  text-align: center;
+  float: none;
+  margin: 0 auto;
+}
+
+#header .navbar-custom ul.navbar-nav li {
+  padding: 0 10px;
+}
+
+#header .navbar-custom ul.navbar-nav li a {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+#posts section.col-md-4 {
+  padding: 0;
+}
+
+#posts section.col-md-4 .post {
+  background-color: #fff;
+  margin: 20px;
+  overflow: hidden;
+}
+
+#posts section.col-md-4 .post .post-wrap {
+  padding: 20px 24px;
+}
+
+#posts section.col-md-4 .post .post-title {
+  display: block;
+  color: #000;
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+#posts section.col-md-4 .post .post-date,
+#posts section.col-md-4 .post .post-nickname {
+  color: #727272;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+#posts section.col-md-4 .post .post-tag {
+  color: #FF7C26;
+  display: inline-block;
+}
+
+#posts section.col-md-4 .post-default .post-header {
+  height: 80px;
+}
+
+#posts section.col-md-4 .post-default .post-header .author-pic {
+  float: left;
+  margin-right: 20px;
+  width: 60px;
+}
+
+#posts section.col-md-4 .post-default .post-body {
+  height: 232px;
+  position: relative;
+  overflow: hidden;
+}
+
+#posts section.col-md-4 .post-pic .media {
+  margin-bottom: 20px;
+}
+
+#posts section.col-md-4 .post-pic .media img {
+  width: 100%;
+}
+
+#posts section.col-md-4 .post-pic .post-header {
+  margin-bottom: 10px;
+}
