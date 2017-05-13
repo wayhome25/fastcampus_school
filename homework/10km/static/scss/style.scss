@@ -37,6 +37,10 @@
 					border: none;
 					border-radius: 5px;
 					transition: 600ms;
+
+					&:focus{
+						outline: none;
+					}
 				}
 
 				&:hover input{
@@ -101,24 +105,25 @@
 
 
 #posts {
-
 	section.col-md-4 {
 		padding: 0;
 
 		.post {
+			position: relative;
 			background-color: $color-bg-post;
 			margin: 20px;
 			overflow: hidden;
+			box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.15);
 
-			.post-wrap{
-				padding: 20px 24px;
-			}
 			.post-title {
 				display: block;
-				color: #000;
+				color: $color-text-h;
 				font-size: 22px;
 				text-decoration: none;
-				font-weight: 300;
+				font-weight: bold;
+				&:hover {
+					color: $color-post-text;
+				}
 			}
 			.post-date,
 			.post-nickname {
@@ -126,13 +131,23 @@
 				font-size: 12px;
 				text-transform: uppercase;
 			}
-			.post-tag {
+			.post-tag a{
 				color: $color-post-tag;
 				display: inline-block;
+				margin: 0 5px;
+			}
+			.tag-container {
+				display: block;
+				position: absolute;
+				bottom: 20px;
+				margin: 0 auto;
+				width: 100%;
+
 			}
 		}
 
 		.post-default {
+			padding: 20px 24px;
 			.post-header {
 				height: 80px;
 
@@ -144,7 +159,7 @@
 			}
 
 			.post-body {
-				height: 232px;
+				height: 240px;
 				position: relative;
 				overflow: hidden;
 			}
@@ -154,16 +169,80 @@
 		.post-pic {
 			.media {
 				margin-bottom: 20px;
+				height: 190px;
+				a:hover{
+					opacity: 0.7;
+					& img {
+						transform: scale(1.1)
+					}
+				}
 				img {
 					width: 100%;
+					object-fit: contain;
+					object-position: bottom;
+					transition: .4s all ease-in-out;
 				}
 			}
 
 			.post-header {
 				margin-bottom: 10px;
 			}
+		}
 
+		.post-quote {
+			position: relative;
+		  	padding: 65px 32px;
+
+			.quote-left,
+			.quote-right {
+				position: absolute;
+				color: #E5E5E5;
+				font-size: 60px;
+			}
+			.quote-left {
+				top: 20px;
+  				left: 20px;
+			}
+			.quote-right {
+				bottom: 20px;
+				right: 20px;
+			}
+			blockquote {
+				color: $color-post-text;
+				padding: 20px;
+				margin: 0;
+				font-size: 17.5px;
+				border-left: none;
+
+			}
 		}
 	}
 
+}
+
+footer {
+ 	text-align: center;
+	#subscribe {
+		border-bottom: 1px solid #e7e7e7;
+		padding: 30px;
+
+		p {
+			margin: 10px;
+		}
+		input {
+			border-radius: 0;
+			box-shadow: none;
+			height: 37px;
+		}
+		.btn {
+			background: #000;
+			color: #fff !important;
+			border-radius: 0;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-size: 12px;
+			font-weight: 600;
+			padding: 9px 20px;
+		}
+	}
 }

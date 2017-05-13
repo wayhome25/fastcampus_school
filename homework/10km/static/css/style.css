@@ -41,6 +41,10 @@
   transition: 600ms;
 }
 
+#header .top .search .search-input input:focus {
+  outline: none;
+}
+
 #header .top .search .search-input:hover input {
   width: 200px;
   padding: 5px 15px;
@@ -58,7 +62,7 @@
 
 #header .top .brnad * {
   vertical-align: middle;
-  color: #645353;
+  color: #333;
 }
 
 #header .top .brnad .logo {
@@ -96,7 +100,7 @@
 #header .navbar-custom ul.navbar-nav li a {
   font-weight: 600;
   font-size: 14px;
-  color: #333;
+  color: #645353;
 }
 
 #posts section.col-md-4 {
@@ -104,21 +108,23 @@
 }
 
 #posts section.col-md-4 .post {
+  position: relative;
   background-color: #fff;
   margin: 20px;
   overflow: hidden;
-}
-
-#posts section.col-md-4 .post .post-wrap {
-  padding: 20px 24px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 #posts section.col-md-4 .post .post-title {
   display: block;
-  color: #000;
+  color: #333;
   font-size: 22px;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: bold;
+}
+
+#posts section.col-md-4 .post .post-title:hover {
+  color: #645353;
 }
 
 #posts section.col-md-4 .post .post-date,
@@ -128,9 +134,22 @@
   text-transform: uppercase;
 }
 
-#posts section.col-md-4 .post .post-tag {
+#posts section.col-md-4 .post .post-tag a {
   color: #FF7C26;
   display: inline-block;
+  margin: 0 5px;
+}
+
+#posts section.col-md-4 .post .tag-container {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#posts section.col-md-4 .post-default {
+  padding: 20px 24px;
 }
 
 #posts section.col-md-4 .post-default .post-header {
@@ -144,19 +163,91 @@
 }
 
 #posts section.col-md-4 .post-default .post-body {
-  height: 232px;
+  height: 240px;
   position: relative;
   overflow: hidden;
 }
 
 #posts section.col-md-4 .post-pic .media {
   margin-bottom: 20px;
+  height: 190px;
+}
+
+#posts section.col-md-4 .post-pic .media a:hover {
+  opacity: 0.7;
+}
+
+#posts section.col-md-4 .post-pic .media a:hover img {
+  transform: scale(1.1);
 }
 
 #posts section.col-md-4 .post-pic .media img {
   width: 100%;
+  object-fit: contain;
+  object-position: bottom;
+  transition: .4s all ease-in-out;
 }
 
 #posts section.col-md-4 .post-pic .post-header {
   margin-bottom: 10px;
+}
+
+#posts section.col-md-4 .post-quote {
+  position: relative;
+  padding: 65px 32px;
+}
+
+#posts section.col-md-4 .post-quote .quote-left,
+#posts section.col-md-4 .post-quote .quote-right {
+  position: absolute;
+  color: #E5E5E5;
+  font-size: 60px;
+}
+
+#posts section.col-md-4 .post-quote .quote-left {
+  top: 20px;
+  left: 20px;
+}
+
+#posts section.col-md-4 .post-quote .quote-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+#posts section.col-md-4 .post-quote blockquote {
+  color: #645353;
+  padding: 20px;
+  margin: 0;
+  font-size: 17.5px;
+  border-left: none;
+}
+
+footer {
+  text-align: center;
+}
+
+footer #subscribe {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 30px;
+}
+
+footer #subscribe p {
+  margin: 10px;
+}
+
+footer #subscribe input {
+  border-radius: 0;
+  box-shadow: none;
+  height: 37px;
+}
+
+footer #subscribe .btn {
+  background: #000;
+  color: #fff !important;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 9px 20px;
 }
