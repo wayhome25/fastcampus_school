@@ -13,3 +13,10 @@
 @media (min-width: 768px) {
 
 }
+
+// 모바일
+@media (max-width: 991px) {
+	.tag-container {
+		display: none !important;
+	}
+}

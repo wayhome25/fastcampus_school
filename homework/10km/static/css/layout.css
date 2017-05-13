@@ -6,3 +6,9 @@
     height: 340px;
   }
 }
+
+@media (max-width: 991px) {
+  .tag-container {
+    display: none !important;
+  }
+}

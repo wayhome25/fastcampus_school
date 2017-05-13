@@ -168,12 +168,18 @@
 
 		.post-pic {
 			.media {
+				position: relative;
 				margin-bottom: 20px;
 				height: 190px;
-				a:hover{
-					opacity: 0.7;
-					& img {
+				a.media-link:hover{
+					img {
 						transform: scale(1.1)
+					}
+					.background {
+						opacity: 0.4;
+					}
+					.readbutton {
+						opacity: 1;
 					}
 				}
 				img {
@@ -181,6 +187,35 @@
 					object-fit: contain;
 					object-position: bottom;
 					transition: .4s all ease-in-out;
+				}
+				.background {
+					position: absolute;
+					display: block;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: #131418;
+					opacity: 0
+				}
+				.readbutton {
+					opacity: 0;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translateX(-50%);
+					padding: 10px 30px;
+					color: #fff;
+					background: #1c1c1c;
+					text-transform: uppercase;
+					margin: 0 auto;
+					margin-top: -30px;
+					transition: .4s all ease-in-out;
+					border-radius: 50px;
+
+					i {
+						margin-right: 10px;
+					}
 				}
 			}
 
