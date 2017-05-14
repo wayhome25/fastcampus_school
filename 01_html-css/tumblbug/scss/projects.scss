@@ -1,6 +1,10 @@
 @import 'variables';
 $top-nav-height: 60px;
 
+#wrap {
+	min-width: 830px;
+}
+
 nav.top-nav {
   background-color: white;
   height: $top-nav-height;
@@ -58,12 +62,19 @@ nav.top-nav {
           img {
             vertical-align: middle;
           }
-          &:hover {
+          &:hover{
             color: $color-theme;
             border-bottom: 1px solid $color-theme;
           }
         }
       }
+	  &.active {
+		a{
+			color: $color-theme;
+		}
+  		border-bottom: 1px solid $color-theme;
+	  }
+
       &.menu-btn {
         margin: 0 0 0 10px;
       }
@@ -84,6 +95,70 @@ nav.top-nav {
 
 	h1{
 		margin-left: 10px;
+		display: inline-block;
+	}
+
+	#select-wrap {
+	  position: relative;
+	  display: inline-block;
+	  vertical-align: super;
+	  margin-left: 15px;
+
+
+
+	  .filter {
+	  	border: 0;
+	      padding: 0px 20px;
+	      outline: 0;
+	      color: $color-text-h;
+	      border: 1px solid #efefef;
+	      appearance: none;
+	      -webkit-appearance: none;
+	      -moz-appearance: none;
+	      display: block;
+	      width: 100%;
+	      width: 180px;
+	      height: 45px;
+
+
+	  }
+
+	  .select__arrow {
+	    position: absolute;
+	    top: 20px;
+	    right: 20px;
+	    width: 0;
+	    height: 0;
+	    pointer-events: none;
+	    border-style: solid;
+	    border-width: 8px 5px 0 5px;
+	    border-color: #7b7b7b transparent transparent transparent;
+	  }
+	}
+
+	.loadmore {
+		display: block;
+		text-align: center;
+
+		.more-button {
+			background-color: #7a7777;
+			border-color: #7a7777;
+			border-radius: 4px;
+			color: #fff;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 20px;
+			padding: 6px 29px;
+			position: relative;
+			text-align: center;
+			vertical-align: middle;
+
+			&:hover {
+				background-color: #585858;
+			}
+		}
 	}
   }
   aside.container-aside {
@@ -106,12 +181,19 @@ nav.top-nav {
 			font-weight: 500;
 			line-height: 22px;
 			padding: 4.33333px 13px;
+			padding-left: 0;
 
-			&:hover {
+			a {
+				padding-left: 13px;
+			}
+
+			&:hover, &.active {
 				a{
 					color: $color-theme;
+					border-left: 1px solid $color-theme;
+
 				}
-				border-left: 1px solid $color-theme;
+
 			}
 		}
 	}

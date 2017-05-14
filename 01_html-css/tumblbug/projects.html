@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>프로젝트 둘러보기 :: 텀블벅</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/common.css">
@@ -14,14 +15,14 @@
   <div id="wrap">
     <nav class="top-nav">
       <ul class="top-nav-left-list">
-        <li class="menu-logo"><a href="#"><img src="images/logo.png" alt=""></a></li>
-        <li class="menu-item"><a href="#">프로젝트 둘러보기</a></li>
+        <li class="menu-logo"><a href="#"><img src="images/logo.png" alt="텀블벅 서비스 로고"></a></li>
+        <li class="menu-item active"><a href="#">프로젝트 둘러보기</a></li>
+		<li class="menu-item"><a href="#">프로젝트 올리기</a></li>
 		<li class="menu-item"><a href="#">도움말</a></li>
-        <!-- <li class="menu-item"><a href="#">프로젝트 올리기</a></li> -->
       </ul>
       <ul class="top-nav-right-list">
         <li class="menu-search">
-          <img class="search-img" src="images/search.png" alt="">
+          <img class="search-img" src="images/search.png" alt="검색">
 		  <input class="search-input" type="text" placeholder="프로젝트를 검색해 보세요!">
         </li>
         <li class="menu-item"><a href="#">로그인</a></li>
@@ -30,35 +31,112 @@
     </nav>
     <div class="container clearfix">
       <section class="container-section">
+
         <h1>모두 보기</h1>
-		<select class="filter">
-			<option value="value">필터옵션</option>
-			<option value="value">필터옵션</option>
-			<option value="value">필터옵션</option>
-			<option value="value">필터옵션</option>
-			<option value="value">필터옵션</option>
-		</select>
+		<div id="select-wrap">
+			<select class="filter">
+				<option value="value">필터</option>
+				<option value="value">최신순</option>
+				<option value="value">마감임박</option>
+				<option value="value">최다후원</option>
+				<option value="value">최고금액</option>
+			</select>
+			<span class="select__arrow"></span>
+		</div>
+
         <ul class="project-list">
-          <li class="project-card">
-            <img class="card-image" src="images/img_project_sample1.jpeg" alt="">
-            <div class="card-top">
-              <p class="card-title">신비한 동물분양 : 오그리&amp;도그리 인형</p>
-              <p class="card-owner">GEP의 프로젝트</p>
-              <p class="card-description">사랑스러운 동물친구 오그리 도그리와의 특별한 일상</p>
-            </div>
-            <div class="card-bottom">
-              <div class="card-bottom-left">
-                <p class="card-bottom-title">모인 금액</p>
-                <p class="card-bottom-content">120,340,509원 <span class="card-bottom-content-percent">1415%</span></p>
-              </div>
-              <div class="card-bottom-right">
-                <p class="card-bottom-title">남은 시간</p>
-                <p class="card-bottom-content">17일</p>
-              </div>
-            </div>
-          </li>
 		  <li class="project-card">
-			<img class="card-image" src="images/img_project_sample1.jpeg" alt="">
+			<a href=""><img class="card-image" src="images/prj_img1.jpeg" alt="프로젝트 대표 이미지"></a>
+				<div class="card-top">
+				  <p class="card-title">소소한 힐링 도자기 소품 '악세사리플레이트'</p>
+				  <p class="card-owner">애리스의 프로젝트</p>
+				  <p class="card-description">지치는 매일을 위로하고 소소한 즐거움을 주는 힐링메이트 도자기 소품입니다 :)</p>
+				</div>
+				<div class="card-bottom">
+				  <div class="card-bottom-left">
+					<p class="card-bottom-title">모인 금액</p>
+					<p class="card-bottom-content">100,000,000원 <span class="card-bottom-content-percent">200%</span></p>
+				  </div>
+				  <div class="card-bottom-right">
+					<p class="card-bottom-title">남은 시간</p>
+					<p class="card-bottom-content">1시간</p>
+				  </div>
+				</div>
+		  </li>
+		  <li class="project-card">
+			<a href=""><img class="card-image" src="images/prj_img2.jpeg" alt="프로젝트 대표 이미지"></a>
+			<div class="card-top">
+			  <p class="card-title">2017 과자전 Love &amp; Thanks 기념엽서</p>
+			  <p class="card-owner">과자전의 프로젝트</p>
+			  <p class="card-description">2017 과자전 Love &amp; Thanks 엽서 프로젝트</p>
+			</div>
+			<div class="card-bottom">
+			  <div class="card-bottom-left">
+				<p class="card-bottom-title">모인 금액</p>
+				<p class="card-bottom-content">120,340,509원 <span class="card-bottom-content-percent">1415%</span></p>
+			  </div>
+			  <div class="card-bottom-right">
+				<p class="card-bottom-title">남은 시간</p>
+				<p class="card-bottom-content">17일</p>
+			  </div>
+			</div>
+		  </li>
+		  <li class="project-card">
+			<a href=""><img class="card-image" src="images/prj_img3.jpg" alt="프로젝트 대표 이미지"></a>
+			<div class="card-top">
+			  <p class="card-title">기억, 향, 그리고 미니멀리즘 디퓨저</p>
+			  <p class="card-owner">CUARTO ESPACIO의 프로젝트</p>
+			  <p class="card-description">Memories &amp; Fragrances, 당신의 기억 속에 있는 향기는 무엇입니까?</p>
+			</div>
+			<div class="card-bottom">
+			  <div class="card-bottom-left">
+				<p class="card-bottom-title">모인 금액</p>
+				<p class="card-bottom-content">600,340,509원 <span class="card-bottom-content-percent">305%</span></p>
+			  </div>
+			  <div class="card-bottom-right">
+				<p class="card-bottom-title">남은 시간</p>
+				<p class="card-bottom-content">3일</p>
+			  </div>
+			</div>
+		  </li>
+		  <li class="project-card">
+			<a href=""><img class="card-image" src="images/prj_img4.jpg" alt="프로젝트 대표 이미지"></a>
+			<div class="card-top">
+			  <p class="card-title">차곡차곡 완성해요, 위빙.</p>
+			  <p class="card-owner">이선우의 프로젝트</p>
+			  <p class="card-description">쉽게 위빙을 할수 있는 DIY위빙키트 입니다.</p>
+			</div>
+			<div class="card-bottom">
+			  <div class="card-bottom-left">
+				<p class="card-bottom-title">모인 금액</p>
+				<p class="card-bottom-content">4,340,509원 <span class="card-bottom-content-percent">635%</span></p>
+			  </div>
+			  <div class="card-bottom-right">
+				<p class="card-bottom-title">남은 시간</p>
+				<p class="card-bottom-content">2일</p>
+			  </div>
+			</div>
+		  </li>
+		  <li class="project-card">
+			<a href=""><img class="card-image" src="images/prj_img5.jpeg" alt="프로젝트 대표 이미지"></a>
+			<div class="card-top">
+			  <p class="card-title">과자와 생활-3 리리키친의 접시</p>
+			  <p class="card-owner">리리키친의 프로젝트</p>
+			  <p class="card-description">리리키친이 '과자전 접시 세트'를 만듭니다. '과자와생활' 프로젝트</p>
+			</div>
+			<div class="card-bottom">
+			  <div class="card-bottom-left">
+				<p class="card-bottom-title">모인 금액</p>
+				<p class="card-bottom-content">7,340,509원 <span class="card-bottom-content-percent">335%</span></p>
+			  </div>
+			  <div class="card-bottom-right">
+				<p class="card-bottom-title">남은 시간</p>
+				<p class="card-bottom-content">5일</p>
+			  </div>
+			</div>
+		  </li>
+		  <li class="project-card">
+			<a href=""><img class="card-image" src="images/img_project_sample1.jpeg" alt="프로젝트 대표 이미지"></a>
 			<div class="card-top">
 			  <p class="card-title">신비한 동물분양 : 오그리&amp;도그리 인형</p>
 			  <p class="card-owner">GEP의 프로젝트</p>
@@ -76,11 +154,29 @@
 			</div>
 		  </li>
 		  <li class="project-card">
-			<img class="card-image" src="images/img_project_sample1.jpeg" alt="">
+			<a href=""><img class="card-image" src="images/prj_img1.jpeg" alt="프로젝트 대표 이미지"></a>
 			<div class="card-top">
-			  <p class="card-title">신비한 동물분양 : 오그리&amp;도그리 인형</p>
-			  <p class="card-owner">GEP의 프로젝트</p>
-			  <p class="card-description">사랑스러운 동물친구 오그리 도그리와의 특별한 일상</p>
+			  <p class="card-title">소소한 힐링 도자기 소품 '악세사리플레이트'</p>
+			  <p class="card-owner">애리스의 프로젝트</p>
+			  <p class="card-description">지치는 매일을 위로하고 소소한 즐거움을 주는 힐링메이트 도자기 소품입니다 :)</p>
+			</div>
+			<div class="card-bottom">
+			  <div class="card-bottom-left">
+				<p class="card-bottom-title">모인 금액</p>
+				<p class="card-bottom-content">100,000,000원 <span class="card-bottom-content-percent">200%</span></p>
+			  </div>
+			  <div class="card-bottom-right">
+				<p class="card-bottom-title">남은 시간</p>
+				<p class="card-bottom-content">1시간</p>
+			  </div>
+			</div>
+		  </li>
+		  <li class="project-card">
+			<a href=""><img class="card-image" src="images/prj_img2.jpeg" alt="프로젝트 대표 이미지"></a>
+			<div class="card-top">
+			  <p class="card-title">2017 과자전 Love &amp; Thanks 기념엽서</p>
+			  <p class="card-owner">과자전의 프로젝트</p>
+			  <p class="card-description">2017 과자전 Love &amp; Thanks 엽서 프로젝트</p>
 			</div>
 			<div class="card-bottom">
 			  <div class="card-bottom-left">
@@ -94,56 +190,45 @@
 			</div>
 		  </li>
 		  <li class="project-card">
-			<img class="card-image" src="images/img_project_sample1.jpeg" alt="">
+			<a href=""><img class="card-image" src="images/prj_img3.jpg" alt="프로젝트 대표 이미지"></a>
 			<div class="card-top">
-			  <p class="card-title">신비한 동물분양 : 오그리&amp;도그리 인형</p>
-			  <p class="card-owner">GEP의 프로젝트</p>
-			  <p class="card-description">사랑스러운 동물친구 오그리 도그리와의 특별한 일상</p>
+			  <p class="card-title">기억, 향, 그리고 미니멀리즘 디퓨저</p>
+			  <p class="card-owner">CUARTO ESPACIO의 프로젝트</p>
+			  <p class="card-description">Memories &amp; Fragrances, 당신의 기억 속에 있는 향기는 무엇입니까?</p>
 			</div>
 			<div class="card-bottom">
 			  <div class="card-bottom-left">
 				<p class="card-bottom-title">모인 금액</p>
-				<p class="card-bottom-content">120,340,509원 <span class="card-bottom-content-percent">1415%</span></p>
+				<p class="card-bottom-content">600,340,509원 <span class="card-bottom-content-percent">305%</span></p>
 			  </div>
 			  <div class="card-bottom-right">
 				<p class="card-bottom-title">남은 시간</p>
-				<p class="card-bottom-content">17일</p>
-			  </div>
-			</div>
-		  </li>
-		  <li class="project-card">
-			<img class="card-image" src="images/img_project_sample1.jpeg" alt="">
-			<div class="card-top">
-			  <p class="card-title">신비한 동물분양 : 오그리&amp;도그리 인형</p>
-			  <p class="card-owner">GEP의 프로젝트</p>
-			  <p class="card-description">사랑스러운 동물친구 오그리 도그리와의 특별한 일상</p>
-			</div>
-			<div class="card-bottom">
-			  <div class="card-bottom-left">
-				<p class="card-bottom-title">모인 금액</p>
-				<p class="card-bottom-content">120,340,509원 <span class="card-bottom-content-percent">1415%</span></p>
-			  </div>
-			  <div class="card-bottom-right">
-				<p class="card-bottom-title">남은 시간</p>
-				<p class="card-bottom-content">17일</p>
+				<p class="card-bottom-content">3일</p>
 			  </div>
 			</div>
 		  </li>
         </ul>
+		<div class="loadmore">
+			<a href="" class="more-button">더보기</a>
+		</div>
       </section>
       <aside class="container-aside">
-        <img src="images/project_category.png" alt="">
+        <img src="images/project_category.png" alt="프로젝트 카테고리">
 		<ul class="category-list">
-			<li><a href="#">카테고리</a></li>
-			<li><a href="#">카테고리</a></li>
-			<li><a href="#">카테고리</a></li>
-			<li><a href="#">카테고리</a></li>
-			<li><a href="#">카테고리</a></li>
-			<li><a href="#">카테고리</a></li>
-			<li><a href="#">카테고리</a></li>
-			<li><a href="#">카테고리</a></li>
-			<li><a href="#">카테고리</a></li>
-			<li><a href="#">카테고리</a></li>
+			<li class="active"><a href="#">카테고리</a></li>
+			<li><a href="#">모두 보기</a></li>
+			<li><a href="#">미술</a></li>
+			<li><a href="#">만화</a></li>
+			<li><a href="#">디자인</a></li>
+			<li><a href="#">패션</a></li>
+			<li><a href="#">영화, 비디오</a></li>
+			<li><a href="#">요리</a></li>
+			<li><a href="#">게임</a></li>
+			<li><a href="#">음악</a></li>
+			<li><a href="#">사진</a></li>
+			<li><a href="#">출판</a></li>
+			<li><a href="#">테크놀로지</a></li>
+			<li><a href="#">공연</a></li>
 		</ul>
       </aside>
     </div>

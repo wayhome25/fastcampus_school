@@ -1,3 +1,7 @@
+#wrap {
+  min-width: 830px;
+}
+
 nav.top-nav {
   background-color: white;
   height: 60px;
@@ -68,6 +72,14 @@ nav.top-nav ul li.menu-item a:hover {
   border-bottom: 1px solid #fa6b69;
 }
 
+nav.top-nav ul li.active {
+  border-bottom: 1px solid #fa6b69;
+}
+
+nav.top-nav ul li.active a {
+  color: #fa6b69;
+}
+
 nav.top-nav ul li.menu-btn {
   margin: 0 0 0 10px;
 }
@@ -87,6 +99,66 @@ nav.top-nav ul li.menu-btn {
 
 .container section.container-section h1 {
   margin-left: 10px;
+  display: inline-block;
+}
+
+.container section.container-section #select-wrap {
+  position: relative;
+  display: inline-block;
+  vertical-align: super;
+  margin-left: 15px;
+}
+
+.container section.container-section #select-wrap .filter {
+  border: 0;
+  padding: 0px 20px;
+  outline: 0;
+  color: #645353;
+  border: 1px solid #efefef;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  width: 100%;
+  width: 180px;
+  height: 45px;
+}
+
+.container section.container-section #select-wrap .select__arrow {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: #7b7b7b transparent transparent transparent;
+}
+
+.container section.container-section .loadmore {
+  display: block;
+  text-align: center;
+}
+
+.container section.container-section .loadmore .more-button {
+  background-color: #7a7777;
+  border-color: #7a7777;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 6px 29px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.container section.container-section .loadmore .more-button:hover {
+  background-color: #585858;
 }
 
 .container aside.container-aside {
@@ -111,14 +183,16 @@ nav.top-nav ul li.menu-btn {
   font-weight: 500;
   line-height: 22px;
   padding: 4.33333px 13px;
+  padding-left: 0;
 }
 
-.container aside.container-aside ul.category-list li:hover {
-  border-left: 1px solid #fa6b69;
+.container aside.container-aside ul.category-list li a {
+  padding-left: 13px;
 }
 
-.container aside.container-aside ul.category-list li:hover a {
+.container aside.container-aside ul.category-list li:hover a, .container aside.container-aside ul.category-list li.active a {
   color: #fa6b69;
+  border-left: 1px solid #fa6b69;
 }
 
 section.container-section ul.project-list li.project-card {
