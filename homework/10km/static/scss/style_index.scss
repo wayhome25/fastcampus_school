@@ -102,8 +102,6 @@
 	}
 }
 
-
-
 #posts {
 	.col-md-12,
 	.col-md-4  {
@@ -111,9 +109,10 @@
 	}
 
 	.post-big {
-		height: 512px;
+		// height: 512px;
 		overflow: hidden;
 		margin: 20px;
+		height: 100%;
 
 		.carousel-caption {
 			font-weight: bold;

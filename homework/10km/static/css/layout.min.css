@@ -1,1 +1,1 @@
-@media (min-width: 992px){.navbar-custom{height:50px}.post{height:340px}}@media (max-width: 991px){.tag-container{display:none !important}}
+@media (min-width: 992px){.navbar-custom{height:50px}.post{height:340px}}@media (max-width: 991px){#posts .post{margin-bottom:50px}#posts .tag-container{display:none !important}#posts .post-big .carousel-caption{font-weight:bold;margin-bottom:20px}#posts .post-big .carousel-caption h3{font-size:30px}#posts .post-big .carousel-caption p{font-size:20px}}

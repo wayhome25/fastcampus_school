@@ -6,17 +6,33 @@
 	.post {
 		height: 340px;
 	}
-
 }
 
-// 태블릿
+// 태블릿q xz
 @media (min-width: 768px) {
 
 }
 
 // 모바일
 @media (max-width: 991px) {
-	.tag-container {
-		display: none !important;
+	#posts {
+		.post {
+			margin-bottom: 50px;
+		}
+		.tag-container {
+			display: none !important;
+		}
+		.post-big {
+			.carousel-caption {
+				font-weight: bold;
+				margin-bottom: 20px;
+				h3 {
+					font-size: 30px;
+				}
+				p {
+					font-size: 20px;
+				}
+			}
+		}
 	}
 }
