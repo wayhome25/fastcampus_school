@@ -103,11 +103,31 @@
   color: #645353;
 }
 
-#posts section.col-md-4 {
+#posts .col-md-12,
+#posts .col-md-4 {
   padding: 0;
 }
 
-#posts section.col-md-4 .post {
+#posts .post-big {
+  height: 512px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+#posts .post-big .carousel-caption {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#posts .post-big .carousel-caption h3 {
+  font-size: 50px;
+}
+
+#posts .post-big .carousel-caption p {
+  font-size: 30px;
+}
+
+#posts .post {
   position: relative;
   background-color: #fff;
   margin: 20px;
@@ -115,7 +135,7 @@
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
-#posts section.col-md-4 .post .post-title {
+#posts .post .post-title {
   display: block;
   color: #333;
   font-size: 22px;
@@ -123,24 +143,24 @@
   font-weight: bold;
 }
 
-#posts section.col-md-4 .post .post-title:hover {
+#posts .post .post-title:hover {
   color: #645353;
 }
 
-#posts section.col-md-4 .post .post-date,
-#posts section.col-md-4 .post .post-nickname {
+#posts .post .post-date,
+#posts .post .post-nickname {
   color: #727272;
   font-size: 12px;
   text-transform: uppercase;
 }
 
-#posts section.col-md-4 .post .post-tag a {
+#posts .post .post-tag a {
   color: #FF7C26;
   display: inline-block;
   margin: 0 5px;
 }
 
-#posts section.col-md-4 .post .tag-container {
+#posts .post .tag-container {
   display: block;
   position: absolute;
   bottom: 20px;
@@ -148,52 +168,52 @@
   width: 100%;
 }
 
-#posts section.col-md-4 .post-default {
+#posts .post-default {
   padding: 20px 24px;
 }
 
-#posts section.col-md-4 .post-default .post-header {
+#posts .post-default .post-header {
   height: 80px;
 }
 
-#posts section.col-md-4 .post-default .post-header .author-pic {
+#posts .post-default .post-header .author-pic {
   float: left;
   margin-right: 20px;
   width: 60px;
 }
 
-#posts section.col-md-4 .post-default .post-body {
+#posts .post-default .post-body {
   height: 240px;
   position: relative;
   overflow: hidden;
 }
 
-#posts section.col-md-4 .post-pic .media {
+#posts .post-pic .media {
   position: relative;
   margin-bottom: 20px;
   height: 190px;
 }
 
-#posts section.col-md-4 .post-pic .media a.media-link:hover img {
+#posts .post-pic .media a.media-link:hover img {
   transform: scale(1.1);
 }
 
-#posts section.col-md-4 .post-pic .media a.media-link:hover .background {
+#posts .post-pic .media a.media-link:hover .background {
   opacity: 0.4;
 }
 
-#posts section.col-md-4 .post-pic .media a.media-link:hover .readbutton {
+#posts .post-pic .media a.media-link:hover .readbutton {
   opacity: 1;
 }
 
-#posts section.col-md-4 .post-pic .media img {
+#posts .post-pic .media img {
   width: 100%;
   object-fit: contain;
   object-position: bottom;
   transition: .4s all ease-in-out;
 }
 
-#posts section.col-md-4 .post-pic .media .background {
+#posts .post-pic .media .background {
   position: absolute;
   display: block;
   top: 0;
@@ -204,7 +224,7 @@
   opacity: 0;
 }
 
-#posts section.col-md-4 .post-pic .media .readbutton {
+#posts .post-pic .media .readbutton {
   opacity: 0;
   position: absolute;
   left: 50%;
@@ -220,37 +240,37 @@
   border-radius: 50px;
 }
 
-#posts section.col-md-4 .post-pic .media .readbutton i {
+#posts .post-pic .media .readbutton i {
   margin-right: 10px;
 }
 
-#posts section.col-md-4 .post-pic .post-header {
+#posts .post-pic .post-header {
   margin-bottom: 10px;
 }
 
-#posts section.col-md-4 .post-quote {
+#posts .post-quote {
   position: relative;
   padding: 65px 32px;
 }
 
-#posts section.col-md-4 .post-quote .quote-left,
-#posts section.col-md-4 .post-quote .quote-right {
+#posts .post-quote .quote-left,
+#posts .post-quote .quote-right {
   position: absolute;
   color: #E5E5E5;
   font-size: 60px;
 }
 
-#posts section.col-md-4 .post-quote .quote-left {
+#posts .post-quote .quote-left {
   top: 20px;
   left: 20px;
 }
 
-#posts section.col-md-4 .post-quote .quote-right {
+#posts .post-quote .quote-right {
   bottom: 20px;
   right: 20px;
 }
 
-#posts section.col-md-4 .post-quote blockquote {
+#posts .post-quote blockquote {
   color: #645353;
   padding: 20px;
   margin: 0;
